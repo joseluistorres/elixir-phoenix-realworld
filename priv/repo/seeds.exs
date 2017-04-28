@@ -9,3 +9,9 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias RealWorld.Repo
+alias RealWorld.Blog
+
+Blog.create_tag(%{name: "reactjs"})
+Blog.create_tag(%{name: "angularjs"})

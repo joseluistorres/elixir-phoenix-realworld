@@ -9,5 +9,6 @@ defmodule RealWorld.Web.Router do
     pipe_through :api
 
     resources "/articles", ArticleController, except: [:new, :edit]
+    resources "/tags", TagController, except: [:new, :edit]
   end
 end
